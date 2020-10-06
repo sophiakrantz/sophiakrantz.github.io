@@ -34,11 +34,21 @@ a {
 	background-color: black;
 	color: white;
 }
-
 .navbar:hover a{    
 	color: white;
 }
 
 .photo {
 	margin: 6% 10% 0% 10%;
+}
+.container {
+	margin: 6% 10% 0% 0%;
+}
+.policies {
+}
+.policies:hover {
+	background-color: black;
+}
+.policies:hover a {
+	color: white;
 }
