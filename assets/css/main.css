@@ -11,17 +11,24 @@ ul {
 	align-items: flex-end;
 	text-align: left;
 	list-style-type: none;
-	font-size: 30pt;
+	font-size: 27pt;
 	font-variant-caps: all-small-caps;
 	line-height: 35pt;
-	margin: 1% 12% 0% 12%;
+	margin: 1% 10% 0% 10%;
 }
 li {
-	padding: 0px 25px 0px 25px;
+	padding: 0px 30px 0px 30px;
 }
 a {
 	text-decoration: none;
-    color:black;
+    color: black;
+}
+.logo {
+	border: 4px solid black;
+}
+.navbar {
+	margin: 0% 1% 0% 1%;
+	padding-bottom: 15px;
 }
 .navbar:hover {
 	background-color: black;
@@ -33,5 +40,5 @@ a {
 }
 
 .photo {
-	margin: 8% 13% 0% 14%;
+	margin: 6% 10% 0% 10%;
 }
