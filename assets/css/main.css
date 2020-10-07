@@ -48,6 +48,7 @@ a {
 	width: 1500px;
 	text-align: left;
 	padding-left: 240px;
+	position: relative;
 }
 p {
 	font-variant-caps: normal;
@@ -70,9 +71,34 @@ th:hover, td:hover {
 th:hover a, td:hover a {
 	color: white;
 }
-.policies:hover,  {
+.policies:hover a, .truth:hover p {
 	background-color: black;
-}
-.policies:hover a {
 	color: white;
+	cursor: pointer;
+}
+.citation {
+	text-align: justify;
+	position: absolute;
+	top: 310px;
+	left: -80px;
+}
+.citation p {
+	font-variant-caps: all-small-caps;
+	line-height: 20px;
+}
+.truth {
+	position: absolute;
+	left: 190px;
+	top: 600px;
+}
+.truth p {
+	font-size: 45pt;
+	border: 4px solid black;
+	padding: 25px 0px 25px 0px;
+}
+.hide {
+	background-color: white;
+}
+.reveal {
+	background-color: black;
 }
