@@ -37,16 +37,32 @@ a {
 .navbar:hover a{    
 	color: white;
 }
-
 .photo {
 	margin: 6% 10% 0% 10%;
 }
-.container {
+.container, table {
 	margin: 6% 10% 0% 0%;
+	font-size: 24pt;
+	font-variant-caps: all-small-caps;
+	width: 1500px;
+	text-align: left;
+	padding-left: 240px;
 }
-.policies {
+table:hover {
+	cursor: pointer;
 }
-.policies:hover {
+th, td, tr {
+	padding: 0px 25px 45px 25px;
+	vertical-align: bottom;
+	font-weight: normal;
+}
+th:hover, td:hover {
+	background-color: black;
+}
+th:hover a, td:hover a {
+	color: white;
+}
+.policies:hover,  {
 	background-color: black;
 }
 .policies:hover a {
