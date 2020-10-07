@@ -33,6 +33,7 @@ a {
 .navbar:hover {
 	background-color: black;
 	color: white;
+	cursor: pointer;
 }
 .navbar:hover a{    
 	color: white;
@@ -42,11 +43,18 @@ a {
 }
 .container, table {
 	margin: 6% 10% 0% 0%;
-	font-size: 24pt;
+	font-size: 25pt;
 	font-variant-caps: all-small-caps;
 	width: 1500px;
 	text-align: left;
 	padding-left: 240px;
+}
+p {
+	font-variant-caps: normal;
+	padding: 0px 0px 30px 270px;
+	line-height: 45px;
+	text-align: justify;
+	font-size: 21pt;
 }
 table:hover {
 	cursor: pointer;
