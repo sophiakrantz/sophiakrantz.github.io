@@ -1,0 +1,97 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+	max-width: 1500px;
+}
+div {
+	font-family: 'Commissioner', sans-serif;
+	font-size: 25pt;
+	color: black;
+	text-align: left;
+	background-color: #E69B2A;
+	margin-left: 60px;
+	z-index: 2;
+	background-image:;
+	max-height: none;
+	min-height: none;
+	min-width: none;
+}
+a:link, a:visited, a:hover {
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
+}
+a:active {
+	color: #E69B2A;
+}
+li{
+	list-style-type: none;
+}
+.container{
+	padding: 90px 0px 20px 150px;
+	line-height: 45px;
+	letter-spacing: 15px;
+	background-color: black;
+	color: white;
+	border: 3px solid white;
+	border-radius: 1000px 100px;
+}
+.lyrics, .chorus {
+	padding: 40px 0px 40px 370px;
+	font-size: 20pt;
+	line-height: 40px;
+	border: 3px solid white;
+	border-radius: 0px 300px;
+}
+.chorus {
+	text-align: right;
+	letter-spacing: 10px;
+	padding: 0px 0px 5px 0px;
+	background-color: white;
+	animation: mymove 10s infinite;
+}
+.last {
+	padding: 0px 0px 150px 0px;
+}
+p {
+	font-size: 20pt;
+}
+.chorus:hover, .lyrics:hover {
+	span {
+		font-size: 50pt;
+	}
+}
+span:hover {
+	font-size: 50pt;
+	cursor: crosshair;
+}
+.regina {
+	background-color: inherit;
+	position: absolute;
+	right: -750px;
+	top: 740px;
+	transform: rotate(90deg);
+	font-size: 200pt;
+	z-index: 1;
+}
+.regina:hover {
+	font-weight: bold;
+	font-variant-caps: all-small-caps;
+	font-size: 250pt;
+	right: -950px;
+	top: 955px;
+	margin: 0;
+	cursor: pointer;
+}
+::selection {
+	color: #E69B2A;
+	background-color: black;
+}
+@keyframes mymove {
+  0%   {transform: translate(0px);}
+  20%   {transform: translate(-600px);}
+  80%  {transform: translate(-600px);}
+  100% {transform: translate(0px);}
+}
