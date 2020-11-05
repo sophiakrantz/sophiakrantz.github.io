@@ -37,11 +37,6 @@ a {
 	top: -5vh;
 }
 .page3 {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-content: flex-start;
-	font-size: 8vw;
 	margin: 5% 5% 5% 5%;
 }
 #yid {
@@ -49,9 +44,10 @@ a {
 }
 #or {
 	position: static;
+	font-size: 8vw;
 }
 h1 {
-	font-size: 13vw;
+	font-size: 12vw;
 	font-weight: 500;
 }
 h2 {
