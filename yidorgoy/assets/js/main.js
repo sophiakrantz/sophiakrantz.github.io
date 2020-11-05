@@ -7,7 +7,12 @@ $(function(){
 	}, function(){ 
 		$(this).text(oldtext) 
 	}); 
-}) 
+})
+function myFunction() {
+  var str = "Yid";
+  var result = str.link("../../yid/index.html");
+  document.getElementById("yid").innerHTML = result;
+}
 $(function(){ 
 	var oldtext;     
 	$('#yid').text(function(){ 
