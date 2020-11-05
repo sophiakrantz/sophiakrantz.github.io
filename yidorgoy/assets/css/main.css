@@ -4,9 +4,8 @@
 }
 body {
 	color: #5654A4;
-	background-color: white;
 	font-family: 'Noto Sans KR', sans-serif;
-	background-color: #DFB052;
+	background-color: #ffdd1a;
 	z-index: 1;
 	position: relative;
 }

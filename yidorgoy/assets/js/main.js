@@ -2,7 +2,7 @@ $(function(){
 	var oldtext;     
 	$('#yid').hover(function(){ 
 		oldtext = $(this).text(); 
-		$(this).text("Jewish"); 
+		$(this).text("Jew"); 
 	}, function(){ 
 		$(this).text(oldtext) 
 	}); 
@@ -20,7 +20,7 @@ $(function(){
 	var oldtext;     
 	$('#goy').hover(function(){ 
 		oldtext = $(this).text(); 
-		$(this).text("Not Jewish"); 
+		$(this).text("Gentile"); 
 	}, function(){ 
 		$(this).text(oldtext) 
 	}); 
