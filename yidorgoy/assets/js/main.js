@@ -1,23 +1,18 @@
 //Home page
 $(function(){ 
 	var oldtext;     
-	$('#yid').hover(function(){ 
+	$('#yehudi').hover(function(){ 
 		oldtext = $(this).text(); 
 		$(this).text("Jew"); 
 	}, function(){ 
 		$(this).text(oldtext) 
 	}); 
 })
-function myFunction() {
-  var str = "Yid";
-  var result = str.link("../../yid/index.html");
-  document.getElementById("yid").innerHTML = result;
-}
 $(function(){ 
 	var oldtext;     
-	$('#yid').text(function(){ 
+	$('#yehudi').text(function(){ 
 		oldtext = $(this).text(); 
-		$(this).text("Yid"); 
+		$(this).text("Yehudi"); 
 	}, function(){ 
 		$(this).text(oldtext) 
 	}); 
