@@ -137,7 +137,7 @@ a {
 	padding: 0;
 }
 #religious {
-	padding: 0;
+	padding: 0 5vw 0 5vw;
 }
 #religious a:after {
 	content: 'Schneerson';
@@ -149,10 +149,10 @@ a {
 	content: 'Religious';
 }
 #fun {
-	padding: 0;
+	padding: 0 5vw 0 5vw;
 }
 #fun a:after {
-	content: 'Schtick';
+	content: 'Shtick';
 	background-color: #de8546;
 	border: solid #de8546 6px;
 	border-radius: 300px 300px;
