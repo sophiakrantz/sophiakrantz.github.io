@@ -1,0 +1,283 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #e8e6e3;
+	color: black;
+	user-select: none;
+}
+@media (min-width: 1670px) {
+	body {
+		overflow-x: hidden;
+	}
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+ul, li {
+	list-style-type: none;
+}
+
+.title {
+	font-family:baskerville;
+	font-weight:bold;
+	font-size: 105px;
+	position: absolute;
+	left: 867px;
+	top: 775px;
+	z-index: 2;
+}
+.blot {
+	position: absolute;
+	z-index: 1;
+}
+.wax {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+.wax2 {
+	position: absolute;
+	left: 240px;
+	top: 465px;
+	transform: rotate(120deg);
+	
+}
+.wax3 {
+	position: absolute;
+	left: 1065px;
+	top: 547px;
+	transform: rotate(143deg);
+}
+.wax4 {
+	position: absolute;
+	left: 1586px;
+	top: 1068px;
+	transform: rotate(-165deg);
+}
+.wax5 {
+	position: absolute;
+	left: 1200px;
+	top: 470px;
+	z-index: 3;
+}
+.wax6 {
+	position: absolute;
+	left: 1355px;
+	top: -39px;
+	transform: rotate(-79deg);
+	opacity: 55%;
+}
+.wax7 {
+	position: absolute;
+	left: 752px;
+	top: 198px;
+	transform: rotate(347deg);
+}
+.wax8 {
+	position: absolute;
+	left: 1410px;
+	top: 560px;
+	transform: rotate(165deg);
+}
+.wax:hover, .wax5:hover {
+	animation: movement 0.8s ease-out;
+}
+@keyframes movement {
+	0% {
+		transform: translateY(0px);
+		transform: rotate(0deg);
+	}
+	65% {
+		transform: translateY(30px);
+		transform: rotate(30deg);
+	}
+	100% {
+		transform: translateY(0px);
+		transform: rotate(0deg);
+	}
+}
+.wax2:hover, .wax3:hover, .wax:hover {
+	animation: movement2 1.5s ease-out;
+}
+@keyframes movement2 {
+	0% {
+		transform: translateX(0px);
+		transform: rotate(120deg);
+	}
+	50% {
+		transform: translateX(-50px);
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: translateX(0px);
+		transform: rotate(120deg);
+	}
+}
+.contact {
+	font-family: baskerville;
+	font-weight: normal;
+	font-size: 18.75px;
+	position: fixed;
+	top: 913px;
+	line-height: 20px;
+	z-index: 5;
+	background-color: #e8e6e3;
+	padding: 20px;
+}
+.contact a:hover {
+	font-weight: bold;
+}
+.behind_the_process {
+	font-size: 18.75px;
+	line-height: 20px;
+	position: absolute;
+	left: 507px;
+	top: 1262px;
+	width: 436px;
+}
+.behind_blot {
+	font-size: 18.75px;
+	line-height: 20px;
+	position: absolute;
+	left: 978px;
+	top: 1262px;
+	width: 436px;
+}
+.bio {
+	font-size: 18.75px;
+	line-height: 20px;
+	position: absolute;
+	left: 507px;
+	top: 1664px;
+	width: 907px;
+	z-index: 3;
+}
+.untitled {
+	position: absolute;
+	left: 402px;
+	top: 83px;
+	display: flex;
+	align-items: flex-end;
+	z-index: 4;
+}
+.front {
+	z-index: 2;
+}
+.front:hover {
+	cursor: pointer;
+	animation: wiggle 1s ease-out;
+}
+@keyframes wiggle {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(15deg);
+	}
+}
+.back {
+	cursor: pointer;
+	position: absolute;
+	z-index: 3;
+}
+.back:hover {
+	cursor: pointer;
+}
+.work_title {
+	position: absolute;
+	left: 640px;
+	width: 300px;
+	z-index: 4;
+	font-family: baskerville;
+}
+.square {
+	border-radius: 10px;
+	width: 51px;
+	height: 51px;
+	position: absolute;
+	left: 1042px;
+	top: 777px;
+	z-index: 4;
+}
+.square:hover, .square2:hover {
+	cursor: pointer;
+	filter: saturate(130%);
+}
+.rectangle {
+	width: 507px;
+	height: 240px;
+	position: absolute;
+	left: 1011px;
+}
+.home {
+	font-family: baskerville;
+	font-weight: normal;
+	font-size: 18.75px;
+	position: fixed;
+	top: 63px;
+	z-index: 5;
+	background-color: #e8e6e3;
+	padding: 20px;
+}
+.home a:hover {
+	font-weight: bold;
+}
+.hide {
+	visibility: hidden;
+	z-index: 1;
+}
+.reveal {
+	visibility: visible;
+}
+.form {
+	position: absolute;
+	display: flex;
+	left: 1042px;
+	top: 787px;
+	z-index: 5;
+}
+.answers {
+	position: absolute;
+	left: 140px;
+}
+.submit {
+	position: absolute;
+	top: 195px;
+	left: 250px;
+}
+button:hover {
+	cursor: pointer;
+	filter: saturate(290%);
+}
+.description {
+	position: absolute;
+	left: 1042px;
+	top: 787px;
+	z-index: 5;
+	width: 437px;
+	font-family: baskerville;
+	font-size: 18.75px;
+	line-height: 20px;
+}
+.square2 {
+	position: absolute;
+	border-radius: 10px;
+	width: 51px;
+	height: 51px;
+	z-index: 4;
+	top: 1030px;
+	left: 20px;
+}
+.artist {
+	position: absolute;
+	top: 1030px;
+	left: 20px;
+	width: 360px;
+	font-family: baskerville;
+	font-size: 18.75px;
+	line-height: 20px;
+	z-index: 4;
+}
