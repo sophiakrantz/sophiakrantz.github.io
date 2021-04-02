@@ -1,0 +1,95 @@
+* {
+	padding: 0;
+	margin: 0 0 0 0;
+	user-select: none;
+}
+
+.image {
+	display: block;
+	margin: 3% auto 0 auto;
+	width: 65%;
+}
+.image img {
+	width: 100%
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+.circle {
+	border: 2px solid black;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #e1b7c4;
+	position: absolute;
+}
+.choice {
+	font-family: 'Raleway', sans-serif;
+	position: absolute;
+	left: 19vw;
+	top: 36vw;
+}
+.choice1, .choice2 {
+	padding: 1vw 1vw 1vw 1vw;
+	border: 2px solid black;
+	border-radius: 5vw;
+	background-color: #e1b7c4;
+	border-width: auto;
+	font-size: 1.75vw;
+}
+.choice2 {
+	margin: 2vw 0 0 0;
+}
+.choice1:hover, .choice2:hover, .circle:hover {
+	cursor: pointer;
+	background-color: #cb8098;
+}
+.back, .forward {
+	font-family: 'Raleway', sans-serif;
+	font-size: 7.5vw;
+	font-weight: 300;
+	position: absolute;
+	top: 18.5vw;
+}
+.back {
+	left: 10vw;
+}
+.forward {
+	right: 10vw;
+}
+.back a:hover, .forward a:hover {
+	cursor: pointer;
+	color: #cb8098;
+
+}
+@media (max-width: 1450px)
+{
+	.image {
+		display: block;
+		margin: 6% 0% 0 12%;
+		width: 85%;
+	}
+	.choice {
+		font-size: 2vw;
+		width: 50%;
+		left: 15vw;
+		top: 51vw;
+	}
+	.back, .forward {
+		font-size: 8vw;
+		width: 100%;
+		top: 65vw;
+	}
+	.back {
+		left: 12vw;
+	}
+	.forward {
+		left: 92.5vw;
+	}
+	.circle {
+		border: 1.5px solid black;
+		width: 15px;
+		height: 15px;
+	}
+}
