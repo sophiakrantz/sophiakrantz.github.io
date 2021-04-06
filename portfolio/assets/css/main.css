@@ -19,6 +19,9 @@ body {
 .browser img {
 	padding: 0 5vw 0 5vw;
 }
+ul, li {
+	list-style-type: none;
+}
 a {
 	text-decoration: none;
 	color: black;
@@ -100,6 +103,8 @@ a:hover {
 }
 .enter:hover {
 	cursor: pointer;
+	background-color: pink;
+	opacity: 10%;
 }
 .square1, .square2, .square3, .square4 {
 	width: 10%;
@@ -123,4 +128,87 @@ a:hover {
 }
 .square4 {
 	margin: 5.5% 45.5% 20% 74.15%;
-} 
+}
+.door {
+	width: 9%;
+	height: 38%;
+	position: absolute;
+	z-index: 5;
+	margin: 26% 45.5% 20% 45%;
+}
+.door:hover {
+	background-color: pink;
+	opacity: 10%;
+}
+.web_gallery img {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+}
+.exit {
+	position: absolute;
+	z-index: 5;
+	width: 15.3%;
+	height: 50.75%;
+	margin: 18.8% 55% 25% 55.7%;
+}
+.exit:hover {
+	background-color: pink;
+	opacity: 10%;
+}
+.directory {
+	position: absolute;
+	z-index: 5;
+	font-size: 3.5vh;
+	margin: 20% 0 0 75%;
+}
+.highlight1 img {
+	position: absolute;
+	z-index: 10;
+	width: 14.6%;
+	height: 37.5%;
+	margin: 15.85% 0 0 10%;
+	border-radius: 25px;
+	filter: grayscale(1);
+}
+.highlight2 img {
+	position: absolute;
+	z-index: 10;
+	width: 8%;
+	height: 22%;
+	margin: 12.8% 0 0 43%;
+	border-radius: 25px;
+	filter: grayscale(1);
+}
+.highlight3 img {
+	position: absolute;
+	z-index: 10;
+	width: 13%;
+	height: 24%;
+	border-radius: 25px;
+	margin: 15.8% 0 0 27.4%;
+	filter: grayscale(1);
+}
+.highlight4 img {
+	position: absolute;
+	z-index: 10;
+	width: 12.9%;
+	height: 24.5%;
+	border-radius: 25px;
+	margin: 30.45% 0 0 27.4%;
+	filter: grayscale(1);
+}
+.highlight5 img {
+	position: absolute;
+	z-index: 10;
+	width: 6%;
+	height: 13.8%;
+	border-radius: 25px;
+	margin: 26.85% 0 0 44%;
+	filter: grayscale(1);
+}
+.highlight1 img:hover, .highlight2 img:hover, .highlight3 img:hover, .highlight4 img:hover, .highlight5 img:hover {
+	filter: none;
+	opacity: 90%;
+	cursor: pointer;
+}
