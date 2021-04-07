@@ -47,25 +47,18 @@ a:hover {
 	position: absolute;
 	z-index: 1;
 }
-.front_window {
+.name {
 	position: absolute;
 	z-index: 5;
 	width: 100%;
-	top: 45vh;
-	left: 8.8vw;
-}
-.name {
-	font-size: 5.5vh;
-	font-weight: 500;
+	top: 70vh;
+	left: 9.5vw;
+	font-size: 9.5vh;
+	font-family: 'alata', sans-serif;
 }
 .name:hover {
 	cursor: pointer;
 	color: pink;
-}
-.job {
-	position: absolute;
-	left: 0.2vw;
-	font-size: 2.5vh;
 }
 .about {
 	position: absolute;
@@ -139,6 +132,12 @@ a:hover {
 .door:hover {
 	background-color: pink;
 	opacity: 10%;
+}
+.namenav {
+	position: absolute;
+	z-index: 5;
+	font-size: 5.5vh;
+	margin: 3% 0 0 7%;
 }
 .web_gallery img {
 	position: absolute;
