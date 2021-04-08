@@ -3,6 +3,10 @@
 	padding: 0;
 	user-select: none;
 }
+a {
+	text-decoration: none;
+	color: black;
+}
 .open, .closed {
 	position: absolute;
 	z-index: 1;
@@ -25,4 +29,65 @@
 }
 .enter:hover {
 	cursor: pointer;
+}
+.name {
+	position: absolute;
+	z-index: 5;
+	font: 500 7.5vw 'lexend', sans-serif;
+	margin: 7.05% 0 0 7.82%;
+	height: 15%;
+}
+/*font: style (normal, italic, oblique) variant (small caps, caps) weight (#) size/line-height family*/
+.name:hover {
+	cursor: pointer;
+	color: #D1AAC5;
+}
+.more {
+	position: absolute;
+	z-index: 5;
+	font: 300 0.8vw 'mulish', sans-serif;
+	line-height: 1.05vw;
+	width: 29%;
+	margin: 29% 0 0 8.5%;
+}
+.contact {
+	margin: 5% 0 0 0;
+}
+.email, .instagram, .twitter, .youtube {
+	width: 13%;
+	margin: 1% 0 0 0;
+}
+.email:hover, .email_address:hover a, .instagram:hover, .instagram_address a:hover, .twitter:hover, .twitter_address a:hover, .youtube:hover, .youtube_address a:hover {
+	cursor: pointer;
+	color: #A96392;
+}
+.email_address, .instagram_address, .twitter_address, .youtube_address {
+	position: absolute;
+	z-index: 6;
+	margin: -3.6% 0 0 20%;
+	width: 35%;
+}
+.exhibition {
+	position: absolute;
+	z-index: 5;
+	font: 300 0.8vw 'mulish', sans-serif;
+	margin: 29% 0 0 60.5%;
+}
+.exhibition_links {
+	padding: 0 0 5% 0;
+}
+.exhibition p {
+	margin: 1.5% 0 0 0;
+}
+.exhibition p a:hover {
+	cursor: pointer;
+	color: #A96392;
+}
+.search {
+	background-color: yellow;
+	position: absolute;
+	z-index: 7;
+	margin: 15.5% 0 0 8.5%;
+	width: 15%;
+	height: 2.5%;
 }
