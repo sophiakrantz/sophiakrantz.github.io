@@ -1,5 +1,12 @@
+// $(function() {
+// 	$( ".name").click(function() {
+// 		$(".about").toggleClass("hide");
+// 	});
+// });
+
 $(function() {
-	$( ".name").click(function() {
-		$(".about").toggleClass("hide");
+	$( ".enter" ).hover(function() {
+		$(".closed").toggleClass("hide");
+		$(".open").toggleClass("reveal");
 	});
 });
