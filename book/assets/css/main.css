@@ -2,11 +2,13 @@
 	padding: 0;
 	margin: 0 0 0 0;
 	user-select: none;
+	font-family: 'raleway', sans-serif;
 }
 
 .image {
-	display: block;
-	margin: 3% auto 0 auto;
+	position: absolute;
+	z-index: 1;
+	margin: 3% auto 0 17.5%;
 	width: 65%;
 }
 .image img {
@@ -16,19 +18,32 @@ a{
 	text-decoration: none;
 	color: black;
 }
-.circle {
+.intro {
+	position: absolute;
+	z-index: 2;
+	font-size: 1.5vw;
+	margin: 20% 0 0 26%;
+}
+.intro p {
+	margin: 2.5% 0 0 0;
+}
+.circle1, .circle2, .circle3, .circle4 {
 	border: 2px solid black;
-	width: 20px;
-	height: 20px;
+	width: 1.5vh;
+	height: 1.5vh;
 	border-radius: 50%;
 	background-color: #e1b7c4;
 	position: absolute;
+	z-index: 2;
+}
+.circle1:hover, .circle2:hover, .circle3:hover, .circle4:hover {
+	cursor: pointer;
+	background-color: #EDD3DB;
 }
 .choice {
-	font-family: 'Raleway', sans-serif;
 	position: absolute;
-	left: 19vw;
-	top: 36vw;
+	z-index: 6;
+	margin: 36% 0 0 19.5%;
 }
 .choice1, .choice2 {
 	padding: 1vw 1vw 1vw 1vw;
@@ -44,6 +59,19 @@ a{
 .choice1:hover, .choice2:hover, .circle:hover {
 	cursor: pointer;
 	background-color: #cb8098;
+}
+.excerpt1, .excerpt2, .excerpt3, .excerpt4 {
+	position: absolute;
+	z-index: 5;
+}
+.excerpt1:hover, .excerpt2:hover, .excerpt3:hover, .excerpt4:hover {
+	cursor: pointer;
+}
+.excerpt1 img, .excerpt2 img, .excerpt3 img, .excerpt4 img {
+	width: 50%;
+}
+.hide {
+	visibility: hidden;
 }
 .back, .forward {
 	font-family: 'Raleway', sans-serif;
@@ -62,34 +90,4 @@ a{
 	cursor: pointer;
 	color: #cb8098;
 
-}
-@media (max-width: 1450px)
-{
-	.image {
-		display: block;
-		margin: 6% 0% 0 12%;
-		width: 85%;
-	}
-	.choice {
-		font-size: 2vw;
-		width: 50%;
-		left: 15vw;
-		top: 51vw;
-	}
-	.back, .forward {
-		font-size: 8vw;
-		width: 100%;
-		top: 65vw;
-	}
-	.back {
-		left: 12vw;
-	}
-	.forward {
-		left: 92.5vw;
-	}
-	.circle {
-		border: 1.5px solid black;
-		width: 15px;
-		height: 15px;
-	}
 }
