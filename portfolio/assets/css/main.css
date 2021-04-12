@@ -33,53 +33,41 @@ a {
 .name {
 	position: absolute;
 	z-index: 5;
-	font: 500 7.5vw 'lexend', sans-serif;
-	margin: 7.05% 0 0 7.82%;
+	font: 300 3.75vw 'lexend', sans-serif;
+	margin: 29.05% 0 0 8.85%;
 	height: 15%;
+	color: #808080;
+	text-shadow: 0.175vw 0.175vw 3.5px #d7d7d7;
 }
 /*font: style (normal, italic, oblique) variant (small caps, caps) weight (#) size/line-height family*/
 .name:hover {
 	cursor: pointer;
 	color: #D1AAC5;
 }
-.more {
+.about, .contacts a {
 	position: absolute;
 	z-index: 5;
 	font: 300 0.8vw 'mulish', sans-serif;
 	line-height: 1.05vw;
-	width: 29%;
-	margin: 29% 0 0 8.5%;
+	width: 27.75%;
+	color: #595858;
+	text-shadow: 0.175vw 0.175vw 3.5px #eaeaea;
+	margin: 34% 0 0 9.1%;
 }
-.contact {
-	margin: 5% 0 0 0;
+.contacts {
+	display: flex;
+	padding: 7% 0 0 0;
 }
-.email, .instagram, .twitter, .youtube {
-	width: 13%;
-	margin: 1% 0 0 0;
+.email {
+	width: 4.25%;
 }
-.email:hover, .email_address:hover a, .instagram:hover, .instagram_address a:hover, .twitter:hover, .twitter_address a:hover, .youtube:hover, .youtube_address a:hover {
-	cursor: pointer;
-	color: #A96392;
+.instagram {
+	width: 5.75%;
 }
-.email_address, .instagram_address, .twitter_address, .youtube_address {
-	position: absolute;
-	z-index: 6;
-	margin: -3.6% 0 0 20%;
-	width: 35%;
+.twitter {
+	width: 5%;
 }
-.exhibition {
-	position: absolute;
-	z-index: 5;
-	font: 300 0.8vw 'mulish', sans-serif;
-	margin: 29% 0 0 60.5%;
-}
-.exhibition_links {
-	padding: 0 0 5% 0;
-}
-.exhibition p {
-	margin: 1.5% 0 0 0;
-}
-.exhibition p a:hover {
+.email:hover, .instagram a:hover, .twitter a:hover, .youtube a:hover {
 	cursor: pointer;
 	color: #A96392;
 }
