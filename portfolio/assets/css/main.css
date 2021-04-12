@@ -7,6 +7,21 @@ a {
 	text-decoration: none;
 	color: black;
 }
+.browser {
+	display: flex;
+	align-items: center;
+	margin: 9% 23% 0 25%;
+}
+.phone {
+	width: 95%;
+	padding: 0 0 7% 0;
+}
+.laptop {
+	width: 100%;
+}
+.phone:hover, .laptop:hover {
+	opacity: 70%;
+}
 .open, .closed {
 	position: absolute;
 	z-index: 1;
@@ -44,7 +59,7 @@ a {
 	cursor: pointer;
 	color: #D1AAC5;
 }
-.about, .contacts a {
+.about {
 	position: absolute;
 	z-index: 5;
 	font: 300 0.8vw 'mulish', sans-serif;
@@ -54,20 +69,22 @@ a {
 	text-shadow: 0.175vw 0.175vw 3.5px #eaeaea;
 	margin: 34% 0 0 9.1%;
 }
-.contacts {
+.contacts  {
+	position: absolute;
+	z-index: 5;
+	font: 300 0.8vw 'mulish', sans-serif;
+	line-height: 1.05vw;
+	width: 15%;
+	color: #595858;
+	text-shadow: 0.175vw 0.175vw 3.5px #eaeaea;
 	display: flex;
-	padding: 7% 0 0 0;
+
+	margin: 41% 0 0 9.1%;
 }
-.email {
-	width: 4.25%;
+.email, .instagram, .twitter, .youtube {
+	padding: 0 10% 0 0;
 }
-.instagram {
-	width: 5.75%;
-}
-.twitter {
-	width: 5%;
-}
-.email:hover, .instagram a:hover, .twitter a:hover, .youtube a:hover {
+.email a:hover, .instagram a:hover, .twitter a:hover, .youtube a:hover {
 	cursor: pointer;
 	color: #A96392;
 }
