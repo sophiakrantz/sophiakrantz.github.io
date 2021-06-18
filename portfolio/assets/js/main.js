@@ -1,26 +1,19 @@
 $(function() {
-	$( ".name").click(function() {
-		$(".about").toggleClass("hide");
-		$(".contacts").toggleClass("hide");
-	});
-});
-
-$(function() {
 	$( ".enter" ).hover(function() {
-		$(".closed").toggleClass("hide");
-		$(".open").toggleClass("reveal");
+		$(".door").toggleClass("open");
 	});
 });
 $(function() {
-	$( ".exit" ).hover(function() {
-		$(".closed").toggleClass("hide");
-		$(".open").toggleClass("reveal");
+	$( ".enter" ).click(function() {
+		$(".door").toggleClass("inside");
+		$(".within").toggleClass("reveal");
+		$(".enter").toggleClass("hide");
+		$(".outside").toggleClass("hide");
 	});
 });
-
 $(function() {
-	$( ".next").click(function() {
-		$(".indium").toggleClass("hide");
-		$(".previous").toggleClass("hide");
+	$( ".name" ).click(function() {
+		$(".bio").toggleClass("reveal");
+		$(".contact").toggleClass("reveal");
 	});
 });

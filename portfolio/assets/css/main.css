@@ -1,33 +1,37 @@
 * {
 	margin: 0;
 	padding: 0;
-	user-select: none;
 }
 a {
-	text-decoration: none;
 	color: black;
+	cursor: pointer;
+	text-decoration: none;
 }
-.browser {
-	display: flex;
-	align-items: center;
-	margin: 9% 23% 0 25%;
-}
-.phone {
-	width: 95%;
-	padding: 0 0 7% 0;
-}
-.laptop {
-	width: 100%;
-}
-.phone:hover, .laptop:hover {
-	opacity: 70%;
-}
-.open, .closed {
+.enter {
 	position: absolute;
-	z-index: 1;
-	top: 0;
-	left: 0;
-	width: 100%;
+	left: 45.4%;
+	top: 53.4%;
+	width: 8.05%;
+	height: 33.9%;
+	cursor: pointer;
+}
+.door {
+	background-image: url(../imgs/storefront_closed.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+.open {
+	background-image: url(../imgs/storefront_open.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+.inside {
+	background-image: url(../imgs/storefront_inside.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
 }
 .hide {
 	visibility: hidden;
@@ -35,204 +39,76 @@ a {
 .reveal {
 	visibility: visible;
 }
-.enter{
+.home {
+	background-color: none;
+}
+.poster1 {
 	position: absolute;
-	z-index: 5;
-	width: 8.89%;
-	height: 37.15%;
-	margin: 28.925% 0% 0% 44.9%;
+	top: 38.25vh;
+	left: 71.7vw;
+	width: 26.64vh;
 }
-.
-.enter:hover, .exit:hover {
-	cursor: pointer;
-}
-.exit {
+.poster2 {
 	position: absolute;
-	z-index: 5;
-	width: 7.805%;
-	height: 36.55%;
-	margin: 21.85% 0 0 45.65%;
+	top: 38.3vh;
+	left: 13.55vw;
+	width: 26.72vh;
 }
-.name, .name_reverse {
+.name {
 	position: absolute;
-	z-index: 5;
-	font: 300 3.75vw 'lexend', sans-serif;
-	margin: 29.05% 0 0 8.85%;
-	height: 15%;
-	color: #808080;
-	text-shadow: 0.175vw 0.175vw 3.5px #d7d7d7;
+	top: 35.8vh;
+	left: 26.75vw;
+	width: 89.03vh;
 }
-.name_reverse {
-	transform: scale(-1, 1);
-	margin: 21.95% 0 0 61.25%;
-	opacity: 75%;
-	text-shadow: 0.175vw 0.175vw 3.5px #b5b4b4;
-}
-/*font: style (normal, italic, oblique) variant (small caps, caps) weight (#) size/line-height family*/
-.name:hover {
-	cursor: pointer;
-	color: #D1AAC5;
-}
-.about {
+.illustration {
 	position: absolute;
-	z-index: 5;
-	font: 300 0.8vw 'mulish', sans-serif;
-	line-height: 1.05vw;
-	width: 27.75%;
-	color: #595858;
-	text-shadow: 0.175vw 0.175vw 3.5px #eaeaea;
-	margin: 34% 0 0 9.1%;
-}
-.contacts  {
-	position: absolute;
-	z-index: 5;
-	font: 300 0.8vw 'mulish', sans-serif;
-	line-height: 1.05vw;
-	width: 15%;
-	color: #595858;
-	text-shadow: 0.175vw 0.175vw 3.5px #eaeaea;
-	display: flex;
-
-	margin: 41% 0 0 9.1%;
-}
-.email, .instagram, .twitter, .youtube {
-	padding: 0 10% 0 0;
-}
-.email a:hover, .instagram a:hover, .twitter a:hover, .youtube a:hover, .design a:hover, .illustration a:hover, .animation a:hover, .home a:hover, .website_description p a:hover {
-	cursor: pointer;
-	color: #A96392;
-}
-.search {
-	position: absolute;
-	z-index: 7;
-	margin: 1% 0 0 6.5%;
-	width: 86.5%;
-	height: 2.5%;
-}
-.navbar {
-	position: absolute;
-	z-index: 6;
-	margin: 9.35% 0 0 17.35%;
-	font: 300 1.05vw 'mulish', sans-serif;
-	display: flex;
-	flex-wrap: wrap;
-	align-content: space-between;
-	width: 8%;
-	height: 21.5%;
+	top: 65.9vh;
+	left: 65vw;
+	width: 39.7vh;
 }
 .design {
-	transform: rotate(5deg);
-	padding: 4% 0 0 0;
-}
-.animation {
-	transform: rotate(-3deg);
-}
-.home {
-	transform: rotate(-5.5deg);
-	padding: 0 0 0 2%;
-}
-.gallery_design {
 	position: absolute;
-	z-index: 2;
-	top: 0;
-	left: 0;
+	top: 64.6vh;
+	left: 13.65vw;
+	width: 32vh;
 }
-.gallery_design img {
-	width: 231.45%;
-}
-.small_gallery_design {
+.book {
 	position: absolute;
-	z-index: 1;
-	width: 100%;
+	top: 68.3vh;
+	left: 36.75vw;
+	width: 10.88vh;
 }
-.small_gallery_design img {
-	width: 137.62%;
-}
-.design_projects, .illustration_projects, .animation_projects {
+.graphic_novel {
 	position: absolute;
-	z-index: 5;
-	display: flex;
-	margin: 13% 0 0 28%;
+	top: 68.1vh;
+	left: 50.95vw;
+	width: 17.88vh;
 }
-.design_projects div {
-	padding: 0 2.15% 0 2.15%;
-}
-.illustration_projects div, .animation_projects div {
-	padding: 0 2.15% 0 2.15%;
-}
-.design_projects div img, .illustration_projects div img, .animation_projects div img {
-	border: 1px solid black;
-}
-.individual {
-	position: absolute;
-	z-index: 1;
-	margin: 0;
-}
-.individual img {
-	width: 100%;
-}
-.individual_display {
-	position: absolute;
-	z-index: 3;
-	width: 100%;
-}
-.indium {
-	position: absolute;
-	z-index: 5;
-}
-.indium, .bromine {
-	width: 22%;
-	margin: 7% 0 0 35%;
-	border: 1px solid black;
-}
-.typographic_contrast {
-	margin: 10% 0 0 35%;
-	width: 20%;
-	border: 1px solid black;
-}
-.apple {
-	margin: 7% 0 0 35%;
-	width: 20%;
-}
-.description {
-	font: 300 0.70vw 'mulish', sans-serif;
-	margin: -3% 0 0 65%;
-}
-.next, .previous {
-	position: absolute;
-	z-index: 10;
-	color: #808080;
-}
-.next {
-	margin: 20% 0 0 60%;
-}
-.previous {
-	margin: 20% 0 0 31%;
-}
-.next:hover, .previous:hover {
+.name:hover, .illustration:hover, .design:hover, .book:hover, .graphic_novel:hover, .poster1:hover, .poster2:hover {
 	cursor: pointer;
-	color: #A96392;
+	filter: hue-rotate(160deg);
 }
-.website {
-	width: 44%;
-	border: 1px solid black;
-	margin: 8.5% 0 0 30%;
+.book:hover, .graphic_novel:hover, .poster1:hover, .poster2:hover {
+	filter: invert(100%);
 }
-.misogyny {
-	width: 40%;
-	border: 1px solid black;
-	margin: 8.5% 0 0 30%;
-}
-.website_description  {
-	font: 300 0.70vw 'mulish', sans-serif;
-	margin: -3% 0 0 77.5%;
-}
-.misogyny_description {
-	font: 300 0.70vw 'mulish', sans-serif;
-	margin: -3% 0 0 73.5%;
-}
-.video {
+.contact, .bio {
 	position: absolute;
-	z-index: 5;
-	margin: 8% 0 0 28.5%;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1vw;
+	line-height: 1.1vw;
+	top: 50.5%;
+	color: #3a413f;
+}
+.contact {
+	left: 29.5%;
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+}
+.contact a {
+	color: #3a413f;
+}
+.bio {
+	left: 37%;
+	width: 36%;
 }
