@@ -1,37 +1,14 @@
 * {
-	margin: 0;
 	padding: 0;
+	margin: 0;
+	font-family: 'poppins', sans-serif;
 }
 a {
-	color: black;
-	cursor: pointer;
 	text-decoration: none;
+	color: #63858d;
 }
-.enter {
-	position: absolute;
-	left: 45.4%;
-	top: 53.4%;
-	width: 8.05%;
-	height: 33.9%;
-	cursor: pointer;
-}
-.door {
-	background-image: url(../imgs/storefront_closed.jpg);
-	background-size: cover;
-	background-position: center;
-	height: 100vh;
-}
-.open {
-	background-image: url(../imgs/storefront_open.jpg);
-	background-size: cover;
-	background-position: center;
-	height: 100vh;
-}
-.inside {
-	background-image: url(../imgs/storefront_inside.jpg);
-	background-size: cover;
-	background-position: center;
-	height: 100vh;
+body {
+	background-color: #17171b;
 }
 .hide {
 	visibility: hidden;
@@ -40,75 +17,138 @@ a {
 	visibility: visible;
 }
 .home {
-	background-color: none;
+	background-image: url(../imgs/neon.gif);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
 }
-.poster1 {
+.hover {
 	position: absolute;
-	top: 38.25vh;
-	left: 71.7vw;
-	width: 26.64vh;
+	z-index: 1;
+	top: 23.5vh;
+	left: 13.5vw;
+	width: 75vw;
+	height: 55vh;
 }
-.poster2 {
-	position: absolute;
-	top: 38.3vh;
-	left: 13.55vw;
-	width: 26.72vh;
-}
-.name {
-	position: absolute;
-	top: 35.8vh;
-	left: 26.75vw;
-	width: 89.03vh;
-}
-.illustration {
-	position: absolute;
-	top: 65.9vh;
-	left: 65vw;
-	width: 39.7vh;
-}
-.design {
-	position: absolute;
-	top: 64.6vh;
-	left: 13.65vw;
-	width: 32vh;
-}
-.book {
-	position: absolute;
-	top: 68.3vh;
-	left: 36.75vw;
-	width: 10.88vh;
-}
-.graphic_novel {
-	position: absolute;
-	top: 68.1vh;
-	left: 50.95vw;
-	width: 17.88vh;
-}
-.name:hover, .illustration:hover, .design:hover, .book:hover, .graphic_novel:hover, .poster1:hover, .poster2:hover {
+.hover:hover {
 	cursor: pointer;
-	filter: hue-rotate(160deg);
 }
-.book:hover, .graphic_novel:hover, .poster1:hover, .poster2:hover {
-	filter: invert(100%);
-}
-.contact, .bio {
+.media {
 	position: absolute;
-	font-family: 'Josefin Sans', sans-serif;
-	font-size: 1vw;
-	line-height: 1.1vw;
-	top: 50.5%;
-	color: #3a413f;
-}
-.contact {
-	left: 29.5%;
+	z-index: 2;
 	display: flex;
 	flex-direction: column;
-	text-align: right;
+	top: 59vh;
+	left: 30.5vw;
 }
-.contact a {
-	color: #3a413f;
+.media p {
+	font-size: 65pt;
+	color: #638787;
+	line-height: 8vh;
 }
-.bio {
-	left: 37%;
-	width: 36%;
+.contact {
+	position: absolute;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	width: 20vw;
+	bottom: 2.5vh;
+	margin: 0 40vw 0 40vw;
+}
+.contact img {
+	padding: 0.5vh 0.5vw 0.5vh 0.5vw;
+}
+.return_home {
+	position: absolute;
+	z-index: 2;
+	padding: 2%;
+	display: flex;
+	flex-direction: column;
+}
+.return_home a p {
+	position: absolute;
+	z-index: 3;
+	font-size: 20pt;
+	left: 2.75vw;
+	line-height: .5vh;
+}
+.print_directory, .digital_directory {
+	position: absolute;
+	z-index: 2;
+	top: 7.5vh;
+	left: 16vw;
+	display: flex;
+	flex-direction: column;
+}
+.print_directory p, .digital_directory p {
+	font-size: 65pt;
+	color: #638787;
+	line-height: 9vh;
+}
+.hover:hover, .print_directory p a:hover, .digital_directory p a:hover, .media p a:hover, .left:hover, .right:hover, .return_home a:hover {
+	cursor: pointer;
+	color: #e5f2fb;
+}
+.image_container {
+	position: absolute;
+	z-index: 1;
+	color: #638787;
+	width: 90vw;
+	height: 88vh;
+	top: 6vh;
+	left: 5vw;
+}
+.left {
+	font-size: 150pt;
+	position: absolute;
+	top: 20vh;
+	left: 0vw;
+}
+.right {
+	font-size: 150pt;
+	position: absolute;
+	top: 20vh;
+	right: 0vw;
+}
+.images {
+	position: absolute;
+	text-align: center;
+	padding: 0 0 0 1%;
+	z-index: 2;
+	width: 81.5vw;
+	height: 60vh;
+	left: 4.25vw;
+	vertical-align: middle;
+}
+.images img {
+	padding: 0 0.5vw 0 0.5vw;
+}
+.title {
+	position: absolute;
+	z-index: 2;
+	font-size: 65pt;
+	width: 40.75vw;
+	height: 10vh;
+	top: 61.5vh;
+	left: 4.25vw;
+}
+.subtitle {
+	position: absolute;
+	z-index: 2;
+	font-size: 23pt;
+	width: 40.75vw;
+	height: 10vh;
+	top: 72vh;
+	left: 4.25vw;
+	line-height: 3vh;
+}
+.description {
+	position: absolute;
+	z-index: 2;
+	font-size: 23pt;
+	width: 40.75vw;
+	height: 10vh;
+	top: 64vh;
+	left: 45vw;
+	line-height: 3.5vh;
 }
