@@ -1,19 +1,42 @@
+// $(function() {
+// 	$( ".hover" ).hover(function() {
+// 		$(".media").removeClass("hide");
+// 	});
+// });
+
 $(function() {
-	$( ".hover" ).hover(function() {
-		$(".media").removeClass("hide");
-	});
-});
-// $(function() {
-// 	$( ".enter" ).click(function() {
-// 		$(".door").toggleClass("inside");
-// 		$(".within").toggleClass("reveal");
-// 		$(".enter").toggleClass("hide");
-// 		$(".outside").toggleClass("hide");
-// 	});
-// });
-// $(function() {
-// 	$( ".name" ).click(function() {
-// 		$(".bio").toggleClass("reveal");
-// 		$(".contact").toggleClass("reveal");
-// 	});
-// });
+	$(".print").click(function() {
+		$(".directory").addClass("hide");
+		$(".print_directory").removeClass("hide");
+		$(".digital_directory").addClass("hide");
+		$(".aboutme").addClass("hide");
+		$(".arrow").removeClass("hide");
+	})
+})
+$(function() {
+	$(".digital").click(function() {
+		$(".directory").addClass("hide");
+		$(".print_directory").addClass("hide");
+		$(".digital_directory").removeClass("hide");
+		$(".aboutme").addClass("hide");
+		$(".arrow").removeClass("hide");
+	})
+})
+$(function() {
+	$(".about").click(function() {
+		$(".directory").addClass("hide");
+		$(".print_directory").addClass("hide");
+		$(".digital_directory").addClass("hide");
+		$(".aboutme").removeClass("hide");
+		$(".arrow").removeClass("hide");
+	})
+})
+$(function() {
+	$(".arrow").click(function() {
+		$(".directory").removeClass("hide");
+		$(".print_directory").addClass("hide");
+		$(".digital_directory").addClass("hide");
+		$(".aboutme").addClass("hide");
+		$(".arrow").addClass("hide");
+	})
+})
